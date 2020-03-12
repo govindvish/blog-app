@@ -18,3 +18,6 @@ Route::get('/services', 'PagesController@services');
 
 // Create all routes for CRUD ops in a Controller
 Route::resource('posts', 'PostsController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
