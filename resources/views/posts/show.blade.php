@@ -5,7 +5,7 @@
 	{{-- to parse html --}}
 	<div>{!!$post->body!!}</div>
 	<hr>
-	<small>Written on {{$post->created_at}}</small>
+	<small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
 	<div class="mt-3">
 		<a href="/posts" class="btn btn-outline-secondary">Go Back</a>
 		<a href="/posts/{{$post->id}}/edit" class="btn btn-outline-secondary">Edit</a>
